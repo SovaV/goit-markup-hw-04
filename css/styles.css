@@ -141,12 +141,10 @@ ul {
   margin-right: 93px;
   padding-top: 24px;
   padding-bottom: 25px;
-  /* outline: 1px solid orange; */
 }
 
 .bot .logo {
   margin-bottom: 20px;
-  /* outline: 1px solid orange; */
 }
 .accent {
   color: #000000;
@@ -237,10 +235,12 @@ ul {
 .hero {
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
 
   background-color: #2f303a;
+}
+.hero .container {
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -259,12 +259,18 @@ ul {
 }
 
 .icon-hero {
-  background-image: url(../images/hero.jpg);
-  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
+  max-width: 1600px;
   background-size: cover;
   background-position: center;
+
+  background-image: linear-gradient(
+      to left,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
 }
 
 /* ======== ФИЛЬТР ======== */
@@ -316,13 +322,11 @@ ul {
 }
 
 .card-set > .item {
-  /* outline: 1px solid green; */
   flex-basis: calc(100% / 4 - var(--card-set-gap));
   margin-left: var(--card-set-gap);
   box-shadow: var(--card-shadow);
 }
 .card-set .item-primary {
-  /* outline: 1px solid green; */
   flex-basis: calc(100% / 3 - var(--card-set-gap));
   margin-left: var(--card-set-gap);
   margin-bottom: var(--card-set-gap);
@@ -333,6 +337,24 @@ ul {
 .card-set .item-secondary {
   flex-basis: calc(100% / 4 - var(--card-set-gap));
   margin-left: var(--card-set-gap);
+}
+
+.thumb {
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+
+  background-color: var(--background-color);
+}
+
+.icon-features {
+  width: 70px;
+  height: 70px;
 }
 
 /* ======== НАШИ ПРОЕКТЫ ======== */
@@ -412,7 +434,16 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
 }
-
+.name-card .text {
+  margin-bottom: 16px;
+}
+.social-link {
+  display: flex;
+}
+.icon-social {
+  width: 44px;
+  height: 44px;
+}
 /* ======== ПОДВАЛ ======== */
 
 .bot {
