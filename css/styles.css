@@ -439,10 +439,15 @@ ul {
 }
 .social-link {
   display: flex;
+  padding: 12px;
 }
 .icon-social {
-  width: 44px;
-  height: 44px;
+  width: 20px;
+  height: 20px;
+  background-color: tomato;
+}
+.item .icon-social {
+  padding: 12px;
 }
 /* ======== ПОДВАЛ ======== */
 
