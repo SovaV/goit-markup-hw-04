@@ -430,24 +430,34 @@ ul {
   font-size: 16px;
   font-weight: normal;
   line-height: 1.2;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
 }
 .name-card .text {
   margin-bottom: 16px;
 }
-.social-link {
+.social {
   display: flex;
+  padding: 0px;
+  width: 206px;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+.social .link {
   padding: 12px;
+  border-radius: 50%;
+  fill: rgba(175, 177, 184, 1);
 }
 .icon-social {
   width: 20px;
   height: 20px;
-  background-color: tomato;
 }
-.item .icon-social {
-  padding: 12px;
+
+.social .link:focus,
+.social .link:hover {
+  background-color: var(--accent-text-color);
+  fill: var(--white-color);
 }
 /* ======== ПОДВАЛ ======== */
 
@@ -461,6 +471,7 @@ ul {
 }
 .bot .container {
   padding-top: 0px;
+  display: flex;
 }
 .bot-nav {
   padding: 0px;
@@ -487,4 +498,19 @@ ul {
 .bot-nav .link:hover,
 .bot-nav .link:focus {
   color: var(--accent-text-color);
+}
+.bot-social {
+  padding: 0px;
+}
+..bot-social .link {
+  fill: var(--secondary-text-color);
+}
+.bot-social .title {
+  margin-bottom: 20px;
+  font-weight: bold;
+  line-height: 1.1;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
 }
