@@ -514,3 +514,7 @@ ul {
   text-transform: uppercase;
   color: var(--white-color);
 }
+
+.icon-social.bottom {
+  fill: var(--white-color);
+}
