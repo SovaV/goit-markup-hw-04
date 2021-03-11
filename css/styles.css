@@ -420,7 +420,6 @@ ul {
 
 .team .title {
   margin-bottom: 10px;
-
   font-weight: 500;
 }
 
@@ -432,12 +431,13 @@ ul {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
+  background-color: var(--white-color);
 }
 .name-card .text {
   margin-bottom: 16px;
 }
 .icons {
-  display: inline-flex;
+  display: flex;
   padding: 0px;
   width: 206px;
   justify-content: space-between;
@@ -534,10 +534,10 @@ ul {
 }
 
 .bot-icons {
-  display: flex;
+  display: block;
   align-items: center;
-  width: 206px;
   justify-content: center;
+  min-width: 206px;
 }
 
 .icons .social-bottom {
@@ -551,4 +551,8 @@ ul {
 .icons .social-bottom:hover {
   background-color: var(--accent-text-color);
   fill: var(--white-color);
+}
+
+.footer {
+  margin-right: 70px;
 }
