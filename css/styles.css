@@ -436,29 +436,50 @@ ul {
 .name-card .text {
   margin-bottom: 16px;
 }
-.social {
-  display: flex;
+.icons {
+  display: inline-flex;
   padding: 0px;
   width: 206px;
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
 }
-.social .link {
+.icons .social {
   padding: 12px;
   border-radius: 50%;
   fill: rgba(175, 177, 184, 1);
 }
-.icon-social {
+
+.icon {
   width: 20px;
   height: 20px;
 }
 
-.social .link:focus,
-.social .link:hover {
+.icons .social:focus,
+.icons .social:hover {
   background-color: var(--accent-text-color);
   fill: var(--white-color);
 }
+
+/* ======== ПОСТОЯННЫЕ КЛИЕНТЫ ======== */
+.clients-item {
+}
+.clients-logo {
+  display: inline-flex;
+}
+.client .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.client-title {
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
 /* ======== ПОДВАЛ ======== */
 
 .bot {
@@ -505,16 +526,29 @@ ul {
 ..bot-social .link {
   fill: var(--secondary-text-color);
 }
-.bot-social .title {
+.join {
   margin-bottom: 20px;
-  font-weight: bold;
-  line-height: 1.1;
-  font-size: 14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-color);
 }
 
-.icon-social.bottom {
+.bot-icons {
+  display: flex;
+  align-items: center;
+  width: 206px;
+  justify-content: center;
+}
+
+.icons .social-bottom {
+  padding: 12px;
+  border-radius: 50%;
+  fill: white;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.icons .social-bottom:focus,
+.icons .social-bottom:hover {
+  background-color: var(--accent-text-color);
   fill: var(--white-color);
 }
